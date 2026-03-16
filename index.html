@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Test Agentforce</title>
+    <style>
+        /* Stili per il body e sfondo */
+        body {
+            background-image: url('robot.png'); /* aggiorna se l'immagine è in una sottocartella */
+            background-size: cover;       /* copre tutto lo schermo */
+            background-repeat: no-repeat; /* non ripete l’immagine */
+            background-position: center;  /* centrata */
+            height: 100vh;                /* altezza viewport */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;                 /* testo leggibile sopra sfondo */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Testo principale */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* rende leggibile su sfondo chiaro/scuro */
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        /* Contenitore per agente Salesforce (in basso a destra) */
+        #agent-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pagina Fittizia per Test Agentforce</h1>
+    <p>L'agente dovrebbe apparire in basso a destra.</p>
+
+    <!-- Contenitore per l'agente -->
+    <div id="agent-container">
+        <!-- INCOLLA QUI LO SNIPPET DI SALESFORCE -->
+        <script type='text/javascript'>
+            // Esempio placeholder: embedded_svc.settings...
+        </script>
+        <!-- FINE SNIPPET -->
+    </div>
+</body>
+</html>
